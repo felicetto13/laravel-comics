@@ -1,0 +1,186 @@
+//
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.top-bar {
+    background-color: #0082f9;
+
+    a {
+        padding: 1rem .5rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.my-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0;
+
+    ul {
+
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-top: 1.5rem;
+
+            &:after {
+                transform: scaleY(0);
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                content: '';
+                height: 5px;
+                background-color: #0082f9;
+                transition: .3s;
+                transition-property: transform;
+                transform-origin: bottom;
+                transition-timing-function: ease-in-out;
+            }
+
+            &:hover:after {
+                transform: scaleY(1);
+            }
+        }
+
+    }
+}
+
+.nav-link {
+    padding: 1rem 1rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.main-content {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.banner {
+    padding: 5rem 0;
+}
+
+.bg-blue {
+    background-color: #0082f9;
+    color: white;
+}
+
+.sign-up-banner {
+    background-color: #303030;
+    padding: 2rem 0;
+}
+
+.sign-up-banner .my-btn-primary {
+    background-color: transparent;
+    color: white;
+    border-color: #0082f9;
+    border-radius: 0;
+    border-width: 2px;
+    padding: 1rem 1.5rem;
+}
+
+.text-blue {
+    color: #0082f9;
+}
+
+.social-icon {
+    padding: 0 .5rem;
+}
+
+.jumbotron {
+    max-width: 100%;
+    width: 100%;
+    min-height: 450px;
+    max-height: 500px;
+    background-image: url(/images/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.title-card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0082f9;
+    color: white;
+    padding: 1rem 1.5rem;
+    transform: translateY(-50%);
+}
+
+.bg-dark-gray {
+    background-color: #1c1c1c;
+}
+
+.current-image {
+    height: 400px;
+    object-fit: contain;
+    aspect-ratio: 1;
+    background-color: beige;
+    padding: 2rem 0;
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.card-body {
+    .card-title {
+        font-size: .9rem;
+        padding: .5rem 0;
+        color: white;
+    }
+}
+
+.my-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        width: 70px;
+        object-fit: contain;
+        aspect-ratio: 1;
+    }
+
+    .card-title h3 {
+        font-size: .9rem;
+        text-transform: uppercase;
+    }
+}
+
+footer {
+    background-image: url('/images/footer-bg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4 {
+    color: white;
+}
+
+.text-menu {
+    font-size: 0.8rem;
+    color: darkgray;
+    font-weight: 600;
+}
+
+.dc-logo-bg {
+    background-image: url('/images/dc-logo-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
