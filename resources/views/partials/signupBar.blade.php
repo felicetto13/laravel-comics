@@ -2,23 +2,23 @@
 $socialItems = [
     [
         'name' => 'facebook',
-        'img' => 'images/footer-facebook.png',
+        'img' => 'facebook.png',
     ],
     [
         'name' => 'twitter',
-        'img' => 'images/footer-twitter.png',
+        'img' => 'twitter.png',
     ],
     [
         'name' => 'youtube',
-        'img' => 'images/footer-youtube.png',
+        'img' => 'youtube.png',
     ],
     [
         'name' => 'pinterest',
-        'img' => 'images/footer-pinterest.png',
+        'img' => 'pinterest.png',
     ],
     [
         'name' => 'periscope',
-        'img' => 'images/footer-periscope.png',
+        'img' => 'periscope.png',
     ],
 ];
 @endphp
@@ -34,7 +34,7 @@ $socialItems = [
                 <ul class="list-unstyled d-flex">
                     @foreach ($socialItems as $item)
                         <li class="social-icon">
-                            <img src="{{ $item['img'] }}" alt="{{ $item['name'] }}">
+                            <img src="images/footer-{{ $item['img'] }}" alt="{{ $item['name'] }}">
                         </li>
                     @endforeach
                 </ul>
