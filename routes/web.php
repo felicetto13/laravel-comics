@@ -17,8 +17,29 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/books', function () {
+Route::get('/comics/index', function () {
     $books = config("comics");
 
-    return view("books", compact("books"));
-})->name("books");
+    return view("comics.index", compact("books"));
+})->name("comics.index");
+
+Route::get('/comics/{id}', function ($id) {
+    $books = config("comics");
+    $selectedBook = null;
+    
+    foreach ($books as $book){
+        if($book["id"] === intval($id)){
+            $selectedBook = $book;
+            break;
+        }
+    }
+
+
+    if(is_null($selectedBook)){
+        abort(404);
+    }
+
+    return view("comics.show", [
+        "book"=>$selectedBook
+    ]);
+})->name("comics.show");

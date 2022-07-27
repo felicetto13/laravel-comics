@@ -1,7 +1,9 @@
-@php
-    $books = config("comics");
-@endphp
+@extends('layouts.app')
 
+@section('page_title', "Comics")
+
+@section('page_content')
+@include('jumbotron')
 <div class="bg-dark-gray">
     <div class="container text-center py-5 position-relative">
         <div class="title-card-container">Current Series</div>
@@ -12,6 +14,6 @@
             </div>
             @endforeach
         </div>
-        <button class="btn btn-primary">Load More</button>
     </div>
 </div>
+@endsection

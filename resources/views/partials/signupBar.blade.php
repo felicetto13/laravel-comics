@@ -34,7 +34,7 @@ $socialItems = [
                 <ul class="list-unstyled d-flex">
                     @foreach ($socialItems as $item)
                         <li class="social-icon">
-                            <img src="images/footer-{{ $item['img'] }}" alt="{{ $item['name'] }}">
+                            <img src="/images/footer-{{ $item['img'] }}" alt="{{ $item['name'] }}">
                         </li>
                     @endforeach
                 </ul>

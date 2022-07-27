@@ -185,3 +185,61 @@ h4 {
   background-size: cover;
 }
 
+.section-card-avatar {
+  position: relative;
+  height: 50px;
+  background-color: #0082fa;
+}
+
+.section-card-avatar .container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid white;
+  transform: translateY(-90%);
+}
+
+.book_title {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.price_section {
+  display: flex;
+  background-color: green;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.price_section .price {
+  padding: 1rem;
+  border-right: 1px solid darkgray;
+}
+
+.price_section .check_availability {
+  padding: 1rem;
+}
+
+.description_section {
+  text-align: left;
+  color: gray;
+  padding: 1rem 0;
+}
+
+.data-book ul li {
+  border-bottom: 1px solid darkgray;
+}
+
+.data-book ul li a {
+  text-decoration: none;
+  color: #0082f9;
+}
+
+.section-details {
+  border-top: 1px solid gray;
+  background-color: #F6F6F6;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+

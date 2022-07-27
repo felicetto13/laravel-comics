@@ -6,7 +6,7 @@ $navbarLink = [
     ],
     [
         'text' => 'Comics',
-        'url' => '',
+        'url' => route('comics.index'),
     ],
     [
         'text' => 'movies',
