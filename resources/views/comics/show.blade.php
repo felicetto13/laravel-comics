@@ -37,8 +37,8 @@
                     </div>
                 </div>
                 <div class="col adv-section">
-                    <span class="text-white">ADRVERTISEMENT</span>
-                    <img src="{{ asset('images/adv.jpg') }}" alt="Advertisement">
+                    <span>ADVERTISEMENT</span>
+                    <img src="{{ asset('/images/adv.jpg') }}" alt="Advertisement">
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
                                         <span>On Sale date: </span>
                                     </div>
                                     <div class="col text-start">
-                                        <span>{{ $book["sale_date"] }}</span>
+                                        <span>{{ date_format(date_create($book["sale_date"]),"M d Y") }}</span>
                                     </div>
                                 </div>
                             </li>
